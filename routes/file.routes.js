@@ -7,7 +7,6 @@ const { uploadFile, getFiles, getFileById, deleteFile } = require('../controller
 // Multer memory storage
 const storage = multer.memoryStorage();
 const upload = multer({ storage });
-
 router.post('/upload', upload.single('pdf'), uploadFile);
 router.get('/', getFiles);
 router.get('/:id', getFileById);
