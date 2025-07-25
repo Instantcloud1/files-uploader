@@ -15,10 +15,12 @@ const port = process.env.PORT || 3000;
 
 // Connect to MongoDB
 connectDB();
+console.log('Vercel Express app (app.js) starting initialization...');
 
 // Middleware
 app.use(cors());
 app.use(express.json());
+console.log('Vercel Express app initialized via app.js');
 app.use(express.urlencoded({ extended: true }));
 
 // Serve static files from 'public' folder
