@@ -2,10 +2,10 @@
   "name": "vercel-pdf-uploader",
   "version": "1.0.0",
   "description": "PDF uploader with local and Vercel support",
-  "main": "app.js", 
+  "main": "api/index.js",  
   "scripts": {
-    "start": "node app.js", 
-    "dev": "nodemon app.js", 
+    "start": "node api/index.js",
+    "dev": "nodemon api/index.js",
     "vercel-dev": "vercel dev",
     "build": "echo 'No build step required'"
   },
